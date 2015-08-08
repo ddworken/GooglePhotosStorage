@@ -18,6 +18,10 @@ And conversely, when retrieving the data from Google Photos, all that has to be 
 2. Base64 decode the text
 3. Concatenate the base64 decoded text from each image into one big file
 
+#The Code 
+
+I have written a custom python program to implement the above. The code for it is [here](https://github.com/ddworken/GooglePhotosStorage). To use it import is as a library and call getImages('fileToBackup') and it will generate the photos for you to upload to Google Photos. To recover the file, download the images from Google Photos into your current dir and call getMessage('fileToBackup'). 
+
 #So What?
 
 There are two main uses of this. The first use would be to use this to scheme to upload images to Google Photos thereby preventing Google from running their lossy compression algorithm on your photos. 
